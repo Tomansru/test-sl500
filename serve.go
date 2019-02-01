@@ -63,7 +63,14 @@ func main() {
 		}
 
 		_, _ = reader.RfLight(sl500_api.ColorGreen)
+		time.Sleep(80 * time.Millisecond)
+		_, _ = reader.RfLight(sl500_api.ColorOff)
+		time.Sleep(80 * time.Millisecond)
+		_, _ = reader.RfLight(sl500_api.ColorGreen)
+		time.Sleep(80 * time.Millisecond)
+		_, _ = reader.RfLight(sl500_api.ColorOff)
 		//_, _ = reader.RfBeep(30)
+
 		log.Printf("% x\n", blockData)
 	}
 }
