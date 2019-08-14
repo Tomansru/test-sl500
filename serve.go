@@ -1,7 +1,7 @@
 package main
 
 import (
-	"git.tomans.ru/Tomansru/sl500-api"
+	"github.com/Tomansru/sl500-api"
 	"log"
 	"time"
 )
